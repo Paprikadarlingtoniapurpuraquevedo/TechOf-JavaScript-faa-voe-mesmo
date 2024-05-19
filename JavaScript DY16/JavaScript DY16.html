@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do it yourself 16</title>
+</head>
+<body>
+    <button onclick="sumofnumbers()">Inserir um valor</button>
+    <p id="sum"></p>
+
+    <script>
+        function sumofnumbers() {
+        var sum = 0;
+        for( i=0; i<5; i++)
+        {
+            var temp = prompt("Inserir um valor")
+            sum=sum+parseInt(temp);
+        }
+    
+        document.getElementById("sum").innerText=sum
+    }
+    </script>
+
+</body>
+</html>

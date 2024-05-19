@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do it yourself 17</title>
+</head>
+<body>
+    <button onclick="calcular()">Sum, Averageandabove 1000</button>
+    <p id="sum"></p>
+    <p id="avg"></p>
+    <p id="above1000"></p>
+
+    <script>
+        function calcular(){
+            var sum = 0;
+            var above1000Counter = 0;
+
+            for (var i = 0; i < 5; i++)
+            {
+                var temp = prompt("Inserir um valor:")
+                sum = sum + parseInt(temp);
+
+                if (temp > 1000) {
+                    above1000Counter++;
+                }
+            }
+
+            var average = sum / 5;
+
+            document.getElementById("sum").innerHTML = "Sum = " + sum;
+            document.getElementById("avg").innerHTML = "Average = " + average;
+            document.getElementById("above1000").innerHTML = "Above 1000 = " + above1000Counter;
+
+        }
+    </script>
+
+</body>
+</html>

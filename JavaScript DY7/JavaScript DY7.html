@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do it yourself 7</title>
+</head>
+<body>
+    
+    <button onclick="RandomNumber()">Get a random number</button>
+    
+    <div id="num">0</div>
+
+    <style>
+
+        body {
+            background-color: orangered;
+        }
+
+        #num {
+            background-color: orangered;
+            width: 20%;
+            height: 150px;
+            border: 3px solid blue;
+            text-align: center;
+            padding: 5px;
+            font-size: 100px;
+            margin-left: 40%;
+            margin-top: 10%;
+        }
+    </style>
+    
+    <script>
+
+        function RandomNumber(){
+            var min= 0;
+            var max = 100;
+            var random = Math.random() * (max - min) + min;
+            document.getElementById("num").innerHTML= random;
+        }
+
+    </script>
+
+</body>
+</html>

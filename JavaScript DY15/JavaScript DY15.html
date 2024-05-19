@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do it yourself 15</title>
+</head>
+<body>
+    <button onclick="printeven()">Count even</button>
+    <p id="details"></p>
+    <script>
+        function printeven(){
+            var counter=0;
+            for(var i=0; i>=0; i++){
+                var n=prompt("Insert a number")
+                n=parseInt(n)
+                if(n>=0){
+                    counter++;
+                }
+
+            }
+            document.getElementById("details").innerText=counter
+        }
+    </script>
+</body>
+</html>

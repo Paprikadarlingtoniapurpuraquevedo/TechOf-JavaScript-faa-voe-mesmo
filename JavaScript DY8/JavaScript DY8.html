@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do it yourself 8</title>
+</head>
+<body>
+    <input type="text" id="n1">
+    <input type="text" id="n2">
+    <button onclick="check()">Press me</button>
+   <script>
+       function check(){
+        var n1 = document.getElementById("n1").value;
+        var n2 = document.getElementById("n2").value;
+
+       if (n1 > n2){
+            alert(n1)
+        }
+
+        else if (n1 < n2){
+            alert(n2)
+        }
+
+        else if (n1 = n2) {
+            alert("Mesmo valor")
+        }
+        }
+    </script>
+</body>
+</html>

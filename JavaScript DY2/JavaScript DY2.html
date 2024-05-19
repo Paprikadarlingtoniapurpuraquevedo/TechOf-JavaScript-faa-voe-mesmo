@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do it yourself 2</title>
+</head>
+<body>
+    <h1>Sum</h1>
+    <input type="text" id="n1">
+    <input type="text" id="n2">
+    <button onclick="sum()">Press me</button>
+    <p id="result"></p>
+    
+    <script>
+    
+    function sum(){
+        var n1 = document.getElementById("n1").value;
+        var n2 = document.getElementById("n2").value;
+
+        var sumValue = parseInt(n1) + parseInt(n2);
+
+        document.getElementById("result").innerText = "O resultado é " + sumValue;
+    }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do it yourself 30</title>
+</head>
+<body>
+    <button onclick="findmax()">Just press</button>
+    <p id="max1"></p>
+    <p id="max2"></p>
+    
+    <script>
+
+        function findmax() {
+            var arr = [1,2,6,9]
+            var num = [6]
+            
+            var maxValue = maxInArray(arr);
+            document.getElementById("max1").innerText = maxValue;
+            
+            var numValue = maxInNumber(num);
+            document.getElementById("max2").innerText = true
+        }
+
+        function maxInArray(arr) {
+            let max = arr[0];
+
+            for (let i = 1; i < arr.length; i++){
+                if (arr[i] > max) {
+                    max = arr[i];
+                }
+            }
+            return (max)  
+        }
+
+        function maxInNumber(num) {
+            let max = num[0];
+
+            for (let i = 1; i < num.length; i++){
+                if(num[i] = 6) {
+                    max = num[i]
+                }
+            }
+            return true
+        }
+    </script>
+</body>
+</html>

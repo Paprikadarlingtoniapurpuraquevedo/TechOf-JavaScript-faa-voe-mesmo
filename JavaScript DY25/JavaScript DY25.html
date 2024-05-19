@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do it yourself 25</title>
+</head>
+<body>
+    <h1>Find the highest number</h1>
+    <button onclick="call()">Carregar</button>
+
+    <p id="max"></p>
+
+    <style>
+        h1 {
+            font-family: Arial;
+        }
+
+        button {
+            font-family: Arial;
+        }
+
+        #max {
+            font-family: Arial;
+        }
+
+    </style>
+
+    <script>
+
+        function call() {
+            var a = parseInt(prompt("Insira o nr"));
+            var b = parseInt(prompt("Insira o nr"));
+            var c = parseInt(prompt("Insira o nr"));
+            
+            var maxValue = maxBetween3Numbers(a,b,c);
+            document.getElementById("max").innerText = maxValue;
+        }
+
+        function maxBetween3Numbers(n1, n2, n3) {
+            var max = 0;
+
+            if  (n1 > n2) {
+                max = n1;
+            }
+            else {
+                max = n2;
+            }
+
+            if (n3 > max) {
+                max = n3;
+            }
+
+            return max;
+        }
+        
+
+    </script>
+    </script>
+</body>
+</html>

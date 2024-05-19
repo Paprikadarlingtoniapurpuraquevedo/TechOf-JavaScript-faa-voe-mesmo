@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do it yourself 5</title>
+</head>
+<body>
+    <h1>Average</h1>
+    <button onclick="details()">Press me</button>
+    <p id="results"></p>
+    <script>
+    function details(){
+            var city = prompt("Inserir cidade");
+            var country = prompt("Inserir país");
+
+            var results = "<b>City:</b> " + city + "<br><b>Country:</b>" + country;
+            document.getElementById("results").innerHTML = results;
+        }
+    </script>   
+</body>
+</html>
